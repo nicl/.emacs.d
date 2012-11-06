@@ -16,7 +16,8 @@
                       clojure-test-mode
                       fill-column-indicator
                       auto-complete
-                      smooth-scrolling)
+                      smooth-scrolling
+                      nrepl)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
