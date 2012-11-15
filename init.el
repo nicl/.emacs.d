@@ -35,3 +35,7 @@
 ;;; prevent backups (git is my VCS)
 ;;; ------------------------------------------------------------------
 (setq make-backup-files nil)
+
+;;; whitespace cleanup on save
+;;; ------------------------------------------------------------------
+(add-hook 'before-save-hook 'whitespace-cleanup)
