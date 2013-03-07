@@ -17,7 +17,8 @@
                       fill-column-indicator
                       auto-complete
                       smooth-scrolling
-                      nrepl)
+                      nrepl
+                      scala-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -39,3 +40,8 @@
 ;;; whitespace cleanup on save
 ;;; ------------------------------------------------------------------
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;;; org mode settings
+;;; ------------------------------------------------------------------
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
