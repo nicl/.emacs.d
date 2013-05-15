@@ -3,9 +3,11 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(when (not package-archive-contents)
+(unless package-archive-contents
   (package-refresh-contents))
 
 (defvar my-packages '(starter-kit
@@ -18,11 +20,11 @@
                       auto-complete
                       smooth-scrolling
                       nrepl
-                      scala-mode)
+                      scala-mode2)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
-  (when (not (package-installed-p p))
+  (unless (package-installed-p p)
     (package-install p)))
 
 ;;; fill-column-indicator
@@ -41,7 +43,3 @@
 ;;; ------------------------------------------------------------------
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
-;;; org mode settings
-;;; ------------------------------------------------------------------
-(setq org-clock-persist 'history)
-(org-clock-persistence-insinuate)
