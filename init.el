@@ -9,7 +9,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(defvar my-packages '()
+(defvar my-packages '(ido-ubiquitous)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

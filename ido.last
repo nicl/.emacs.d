@@ -1,0 +1,28 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/room271/.emacs.d/" . "room271/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/room271/.emacs.d/room271/"
+ "/home/room271/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "ido.el"
+ "README.md"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/room271/.emacs.d/room271/" (21002 40327 397252 500000) "ido.el" "../" "./" "better-defaults.el")
+
+ ("/home/room271/.emacs.d/" (21002 40149 473241 814000) "README.md" "../" "places" "#init.el#" "init.el" ".git/" "auto-save-list/" ".#init.el" ".gitignore" "./" "elpa/" "room271/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
